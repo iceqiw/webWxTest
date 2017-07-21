@@ -1,2 +1,6 @@
 <h1>dashboard</h1>
-<button class="btn btn-primary">ok</button>
+<div>
+    <label>Hero name:</label> <input #heroName>
+    <button class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">Add</button>
+    <h4>{{rename}}</h4>
+</div>

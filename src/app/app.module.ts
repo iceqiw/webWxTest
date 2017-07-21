@@ -7,9 +7,13 @@ import {HttpModule} from '@angular/http';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import '../assets/css/styles.css';
 import {AppComponent} from './app.component';
+
+import {BaseService} from "./service/base.service";
+
 import {DashboardComponent} from './dashboard/dashboard.component';
 
 import {AppRoutingModule} from './app.routing.module';
+
 
 
 @NgModule({
@@ -25,7 +29,7 @@ import {AppRoutingModule} from './app.routing.module';
         DashboardComponent
     ],
     bootstrap: [AppComponent],
-    providers: []
+    providers: [BaseService]
 })
 
 export class AppModule {
